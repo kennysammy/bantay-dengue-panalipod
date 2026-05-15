@@ -1,0 +1,26 @@
+{
+  "name": "@repo/firebase",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "firebase": "^11.10.0",
+    "@repo/shared": "workspace:*",
+    "@repo/constants": "workspace:*"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "test": "echo 'No tests in @repo/firebase'"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "eslint": "^9.39.1",
+    "typescript": "5.9.2",
+    "@types/node": "^22.15.3"
+  }
+}
